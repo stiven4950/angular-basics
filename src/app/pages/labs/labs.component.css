@@ -1,0 +1,22 @@
+.container {
+  padding: 3rem;
+}
+
+.box {
+  height: 20px;
+  background-color: red;
+  display: block;
+}
+
+/* Un juego de clases para poder efectuar el properti binding condicional en las clases */
+.message-error {
+  background-color: red;
+  color: white;
+  padding: .5rem;
+  opacity: 0;
+  transition: all linear .1s;
+}
+
+.message-error.show {
+  opacity: 1;
+}
