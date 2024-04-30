@@ -125,4 +125,10 @@ export class HomeComponent {
   changeFilter(filter: 'all' | 'pending' | 'completed') {
     this.filter.set(filter);
   }
+
+  handleDeleteCompleted(){
+    this.tasks.update(prevState => {
+      return prevState.filter(task => !task.completed);
+    });
+  }
 }

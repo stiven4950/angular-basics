@@ -8,7 +8,7 @@ import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './labs.component.html',
-  styleUrls: ['./labs.component.css']
+  styleUrls: ['./labs.component.css'],
 })
 export class LabsComponent {
   welcome = 'Bienvenido a mi primera aplicación con Angular';
